@@ -1,0 +1,29 @@
+
+
+#spring:
+ # application:
+  #  name: API-GATEWAY
+ # cloud:
+  #  gateway:
+   #   routes:
+    #  - id: SALES-ORDER-SERVICE
+     #   uri: lb://SALES-ORDER-SERVICE
+      #  predicates:
+       # - Path=/order/**
+     # - id: CUSTOMER-SERVICE
+      #  uri: lb://CUSTOMER-SERVICE
+       # predicates:
+        #- Path=/customer-service/**
+     # - id: ITEM-SERVICE
+      #  uri: lb://ITEM-SERVICE
+       # predicates:
+        #- Path=/item/**
+         
+#eureka:
+ # client:
+  #  register-with-eureka: true
+   # fetch-registry: true
+    #service-url:
+     # defaultZone: http://localhost:8761/eureka
+   # instance:
+    #  hostname: localhost
